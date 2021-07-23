@@ -37,6 +37,7 @@ public class RequestHelpers {
        Response response = given().spec(RequestSpecifications.useJWTAuthentication())
                 .body(randomArticle)
                 .when()
+                .log().all()
                 .post("/v1/article");
 
         JsonPath jsonPath = response.jsonPath();

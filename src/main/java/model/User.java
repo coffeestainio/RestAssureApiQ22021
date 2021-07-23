@@ -14,11 +14,6 @@ public class User {
         this.password = password;
     }
 
-//    public User(String name, String password) {
-//        this.name = name;
-//        this.email = generateRandomEmail();
-//        this.password = password;
-//    }
 
     public String getName() {
         return name;
