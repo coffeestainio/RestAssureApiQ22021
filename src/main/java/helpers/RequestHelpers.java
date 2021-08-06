@@ -17,9 +17,6 @@ public class RequestHelpers {
     //   get a json token from the login request
     public static String getAuthToken () {
 
-        if (!TOKEN.equals(""))
-            return TOKEN;
-
         User testUser = new User(
                 "Pablo Juan",
                 "Alexie_Robel@yahoo.com",

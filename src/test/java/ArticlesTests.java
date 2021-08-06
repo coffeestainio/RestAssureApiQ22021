@@ -27,6 +27,7 @@ public class ArticlesTests extends Base{
             .when()
                 .post("/v1/article")
             .then()
+                .log().all()
                 .spec(ResponseSpecifications.validatePositiveResponse())
                 .body("message", Matchers.equalTo("Article created"));
     }

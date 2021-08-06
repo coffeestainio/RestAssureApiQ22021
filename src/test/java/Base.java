@@ -8,7 +8,7 @@ public class Base {
 
     @Parameters("host")
     @BeforeSuite(alwaysRun = true)
-    public void setup(@Optional("http://localhost:9000") String host) {
+    public void setup(@Optional("https://api-coffee-testing.herokuapp.com") String host) {
 
         System.out.println(String.format("Test Host: %s", host));
 

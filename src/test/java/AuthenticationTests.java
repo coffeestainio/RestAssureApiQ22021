@@ -33,7 +33,7 @@ public class AuthenticationTests extends Base{
     public void testDuplicateRegister(){
         User testUser = new User(
                 "Pablo Juan",
-                "Alexie_Robel@yahoo.com",
+                "juan@jose.com",
                 "password");
 
         given()
@@ -60,7 +60,7 @@ public class AuthenticationTests extends Base{
                 .log().all()
                 .spec(ResponseSpecifications.validatePositiveResponse())
                 .body("token.access_token", Matchers.notNullValue())
-                .body("user.email", Matchers.equalTo("uqudwkj@testemail.com"));
+                .body("user.email", Matchers.equalTo("Alexie_Robel@yahoo.com"));
     }
 
     @Test(description = "This test aims to register an invalid user")
